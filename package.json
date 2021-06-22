@@ -1,0 +1,41 @@
+{
+  "name": "sails-hook-rbac",
+  "version": "0.0.1",
+  "description": "Simple RBAC checker with support for context checks for Sails.js as a hook",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --format codeframe '**/*.js'",
+    "lint-fix": "eslint --fix --format codeframe '**/*.js'"
+  },
+  "sails": {
+    "isHook": true,
+    "hookName": "rbac"
+  },
+  "repository": "luislobo/sails-hook-rbac",
+  "author": "Luis Lobo Borobia <luislobo@gmail.com> (https://lobo.com.ar/)",
+  "dependencies": {
+    "@luislobo/rbac2": "1.1.3",
+    "debug": "4.3.1",
+    "flaverr": "^1.10.0",
+    "lodash": "4.17.21"
+  },
+  "license": "MIT",
+  "keywords": [
+    "rbac",
+    "sails",
+    "sails.js",
+    "hook",
+    "role",
+    "based",
+    "access",
+    "control",
+    "hierarchical",
+    "context",
+    "business",
+    "logic",
+    "database"
+  ],
+  "devDependencies": {
+    "eslint": "^7.29.0"
+  }
+}
