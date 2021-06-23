@@ -1,4 +1,4 @@
-# sails hook rbac2
+# Sails hook RBAC
 
 ---
 
