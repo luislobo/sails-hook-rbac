@@ -80,12 +80,12 @@ module.exports = function(sails) {
             return next(null, result);
           }
           debug('rbacCheck:resultEmpty', result);
-          return next(flaverr(403,
+          return next(flaverr('FORBIDDEN',
               new Error('Forbidden')));
         });
       } else {
         debug('rbacCheck:noSessionObject');
-        return next(flaverr('RBAC_NO_SESSION', new Error('No session object')));
+        return next(flaverr('RBAC_NO_SESSION', new Error('No session')));
       }
     },
   };
